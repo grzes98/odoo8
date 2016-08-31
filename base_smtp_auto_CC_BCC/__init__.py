@@ -19,4 +19,4 @@
 #
 ##############################################################################
 
-from . import ir_mail_server
+from model import ir_mail_server
