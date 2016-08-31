@@ -19,18 +19,20 @@
 #
 ##############################################################################
 {
-    'name': 'Auto CC/BCC for every email sent',
-    'version': '1.0',
+    'name': 'Auto CC/BCC for Odoo outgoing mail server',
+    'summary': """
+Automatically copy recipients into the emails Odoo sends. This module allows you to
+define a list of email addresses added as Cc or Bcc when Odoo sends an email.
+    """,
+    'version': '1.1',
     'author': "QAQA",
     'maintainer': 'QAQA',
     'category': 'CRM',
     'license': 'AGPL-3',
     'depends': ['base'],
-    'description': """
-	Adds auto CC/BCC support to Odoo SMTP""",
     'website': 'http://www.qaqa.pl',
     'data': [
-        'ir_mail_server_view.xml',
+        'view/ir_mail_server_view.xml',
     ],
     'demo': [],
     'installable': True,
