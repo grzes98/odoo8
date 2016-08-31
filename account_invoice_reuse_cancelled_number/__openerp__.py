@@ -20,14 +20,9 @@
 ##############################################################################
 {
     'name': "Reuse Cancelled Invoice Number",
+    'summary': "Allows to reuse cancelled invoice number on specific invoices",
     'version': '8.0.0.1.0',
     'category': 'Accounting & Finance',
-    'summary': "Allows to reuse cancelled invoice number on specific invoices",
-    'description': """
-This module allows to reuse the cancelled invoice numbers.<br>
-On invoice draft it displays a button that triggers a wizard wit the list of cancelled invoices with set internal_number field.<br>
-If user selects an invoice, its number and date will be used as invoice (and move) number and date.
-    """,
     'author': "QAQA",
     'website': 'http://www.qaqa.pl',
     'license': 'AGPL-3',
@@ -35,7 +30,7 @@ If user selects an invoice, its number and date will be used as invoice (and mov
         'account'
     ],
     "data": [
-        'invoice_view.xml'
+        'view/invoice_view.xml'
     ],
     "active": False,
     "installable": True,
